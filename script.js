@@ -5,7 +5,14 @@ const gameBoard = (() => {
     [null, null, null],
   ];
 
-  function playerMovement() {}
+  function playerMovement(row, column, symbol) {
+    if (board[row][column] !== null) {
+      return false;
+    }
+    board[row][column] = symbol;
+    return true;
+  }
+
   function checkSymbolInCell(row, column) {
     return board[row][column];
   }
