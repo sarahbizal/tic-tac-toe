@@ -1,4 +1,4 @@
-function gameBoard() {
+const gameBoard = (() => {
   const board = [
     [null, null, null],
     [null, null, null],
@@ -7,5 +7,17 @@ function gameBoard() {
 
   function playerMovement() {}
   function checkSymbolInCell() {}
-  function gameboardReset() {}
-}
+  function gameboardReset() {
+    board.forEach((row) => {
+      row.forEach((cell, index) => {
+        row[index] = null;
+      });
+    });
+  }
+
+  return {
+    playerMovement,
+    checkSymbolInCell,
+    gameboardReset,
+  };
+})();
