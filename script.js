@@ -6,7 +6,10 @@ const gameBoard = (() => {
   ];
 
   function playerMovement() {}
-  function checkSymbolInCell() {}
+  function checkSymbolInCell(row, column) {
+    return board[row][column];
+  }
+
   function gameboardReset() {
     board.forEach((row) => {
       row.forEach((cell, index) => {
