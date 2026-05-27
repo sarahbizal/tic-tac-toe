@@ -31,3 +31,8 @@ const gameBoard = (() => {
     gameboardReset,
   };
 })();
+
+console.log(gameBoard.playerMovement(1, 1, "X"));
+console.log(gameBoard.checkSymbolInCell(1, 1));
+gameBoard.gameboardReset();
+console.log(gameBoard.checkSymbolInCell(1, 1));
