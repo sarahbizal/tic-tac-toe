@@ -1,0 +1,9 @@
+body {
+    background-color: darkslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
